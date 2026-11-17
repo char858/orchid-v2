@@ -3,26 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Equity research from Project Orchid.">
+  <meta name="description" content="Equity research from Orchid Fund.">
   <meta name="theme-color" content="#110d15">
-  <title>Research | Project Orchid</title>
+  <title>Research | Orchid Fund</title>
   <link rel="stylesheet" href="./assets/style.css">
-  <script src="./assets/site.js" defer></script>
+  <link rel="stylesheet" href="./orchid-fund.css">
+  <script src="./orchid-research.js" defer></script>
 </head>
-<body>
+<body class="inner-page">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./">Project Orchid</a>
+  <header class="site-header fund-header wrap">
+    <a class="wordmark" href="./">Orchid Fund</a>
     <nav aria-label="Main navigation">
-      <a href="./#philosophy">Philosophy</a>
-      <a href="./#research" aria-current="true">Research</a>
+        <a href="./about.html">About</a>
+        <a href="./holdings.html">Holdings</a>
+        <a href="./research.html" aria-current="page">Research</a>
+        <a href="./letters.html">Letters</a>
+        <a href="./resources.html">Resources</a>
     </nav>
   </header>
   <main id="main" class="report wrap">
-    <a class="back-link" href="./#research"><span aria-hidden="true">←</span> All research</a>
+    <a class="back-link" href="./research.html"><span aria-hidden="true">←</span> All research</a>
     <div id="report-content" aria-live="polite"><p class="status">Loading report…</p></div>
     <noscript><p>Enable JavaScript to open this research note.</p></noscript>
   </main>
-  <footer class="site-footer wrap"><span>Project Orchid</span><span>A value investing–inspired mock fund</span></footer>
+
+  <footer class="site-footer wrap">
+    <span>Orchid Fund</span><span>A value investing–inspired mock fund</span>
+  </footer>
 </body>
 </html>

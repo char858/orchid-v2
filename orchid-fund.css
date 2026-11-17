@@ -1,0 +1,41 @@
+body.inner-page { display: flex; flex-direction: column; min-height: 100svh; }
+.inner-page .fund-page { flex: 1; }
+.fund-header nav { gap: clamp(1rem, 3vw, 3.1rem); }
+.fund-header nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: .48rem; }
+.home-stage .fund-header { border-color: var(--rule); }
+.fund-page { padding: clamp(2.8rem, 7vw, 7.2rem) 0 clamp(3rem, 8vw, 8rem); max-width: 76rem; }
+.page-intro { margin-bottom: clamp(1.75rem, 4vw, 4rem); }
+.page-intro h1 { font: 400 clamp(4rem, 9vw, 8.25rem)/.9 var(--serif); letter-spacing: -.065em; margin: 0 0 .2em -.04em; }
+.page-intro p, .editorial-row p, .resource-list p { color: var(--muted); }
+.page-intro p { max-width: 60ch; margin: 0; }
+.editorial-row { display: grid; grid-template-columns: minmax(10.5rem, .65fr) minmax(0, 1.55fr); gap: clamp(1rem, 4.5vw, 4.5rem); border-top: 1px solid var(--rule); padding-block: clamp(1.45rem, 3.5vw, 3.4rem); }
+.editorial-row h2 { font-size: clamp(2rem, 3.5vw, 3.5rem); line-height: 1; letter-spacing: -.045em; margin: 0 0 .32em; }
+.editorial-row p { max-width: 64ch; margin-bottom: 1rem; }
+.editorial-row p:last-child { margin-bottom: 0; }
+.letter-entry .letter-date { color: var(--lilac); margin-top: .35rem; }
+.letter-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1.2rem; margin-top: 1.5rem; }
+.letter-actions .detail-link { color: var(--lilac); }
+.empty-state, #research-list > .status { border-top: 1px solid var(--rule); color: var(--muted); padding-block: 1.4rem; margin: 0; }
+.resource-list { list-style: none; padding: 0; margin: 0; }
+.resource-list li { padding-block: clamp(1.1rem, 2.5vw, 2rem); border-top: 1px solid var(--rule); }
+.resource-list a { font: 400 clamp(1.55rem, 2.7vw, 2.6rem)/1.15 var(--serif); text-decoration: none; }
+.resource-list a:hover { text-decoration: underline; }
+.resource-list a span { font-size: .68em; color: var(--lilac); }
+.resource-list p { margin: .55rem 0 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 700px) {
+  .fund-header { display: flex; flex-direction: column; align-items: flex-start; gap: .9rem; justify-content: center; padding-block: 1.1rem; }
+  .fund-header nav { align-items: center; gap: .5rem clamp(.55rem, 2.6vw, 1.3rem); flex-wrap: wrap; }
+  .fund-header nav a { font-size: .88rem; }
+  .editorial-row { grid-template-columns: 1fr; gap: .5rem; }
+  .letter-entry .letter-date { margin-bottom: .3rem; }
+}
+.home-stage .fund-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 -3vw auto;
+  height: 115%;
+  z-index: -1;
+  background: linear-gradient(to bottom, #110d15b0, transparent);
+  pointer-events: none;
+}
