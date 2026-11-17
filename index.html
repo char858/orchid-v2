@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project Orchid is a value investing–inspired mock fund. Explore its philosophy and equity research.">
+  <meta name="theme-color" content="#110d15">
+  <title>Project Orchid</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/site.js" defer></script>
+  <script src="./assets/orchid.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="home-stage">
+    <div class="hero-art" aria-hidden="true">
+      <img id="orchid-image" src="./assets/orchid.webp" width="1400" height="1000" alt="" fetchpriority="high">
+      <canvas id="orchid-canvas" hidden></canvas>
+    </div>
+    <header class="site-header wrap">
+      <a class="wordmark" href="./">Project Orchid</a>
+      <nav aria-label="Main navigation">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#research">Research</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Project<br>Orchid</h1>
+          <p>A value investing–inspired mock fund.</p>
+          <a class="button" href="#research">Explore the research <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+      <section id="philosophy" class="philosophy wrap" aria-labelledby="philosophy-title">
+        <h2 id="philosophy-title">Investment philosophy</h2>
+        <p>Project Orchid looks for businesses whose market prices leave room for a conservative estimate of what they own and what they can earn. Each note sets out the case, the assumptions behind the valuation, and what could change the conclusion.</p>
+      </section>
+      <section id="research" class="research wrap" aria-labelledby="research-title">
+        <h2 id="research-title">Research</h2>
+        <p class="section-intro">Company write-ups and downloadable reports.</p>
+        <div id="research-list" class="research-list" aria-live="polite">
+          <p class="status">Loading research…</p>
+        </div>
+        <noscript><p>Enable JavaScript to open the research library.</p></noscript>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer wrap"><span>Project Orchid</span><span>A value investing–inspired mock fund</span></footer>
+</body>
+</html>
